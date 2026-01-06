@@ -30,15 +30,15 @@ This project focuses on DOM manipulation, game logic, and theme toggling using C
 ![Light Mode Screenshot](lightbckg.png)
 
 ### Dark Mode
-![Dark Mode Screenshot](imagesbckg.png)
+![Dark Mode Screenshot](darkbckg.png)
 
 ---
 
 ## 🛠️ Technologies Used
-- HTML5
-- CSS3 (CSS Variables & Grid)
-- JavaScript (DOM manipulation, game logic)
-- LocalStorage (theme persistence)
+- HTML
+- CSS
+- JavaScript
+- LocalStorage 
 
 ---
 
