@@ -1,0 +1,122 @@
+:root {
+  --title-color: black;
+  --game-board-color: black;
+  --text-color: white;
+  --border-color: black;
+  /*background*/
+  --game-cell-color: white;
+  --winning-cell-backgorund-color: lightgrey;
+  --winning-cell-color: black;
+  --background: url("./background1.jpg") no-repeat center center fixed;
+
+}
+
+.dark-mode {
+  --title-color: white;
+  --game-board-color: white;
+  --text-color: black;
+  --border-color: lightgrey;
+  /*background*/
+  --game-cell-color: black;
+  --winning-cell-backgorund-color: black;
+  --winning-cell-color: rgb(231, 230, 230);
+  --background: url("./background.jpg") no-repeat center center fixed;
+}
+
+#theme-button {
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: var(--game-board-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 250px;
+  cursor: pointer;
+
+}
+
+#theme-button svg {
+  fill: var(--game-cell-color);
+}
+
+#theme-button svg:last-child {
+  display: none;
+}
+
+.dark-mode #theme-button svg:first-child {
+  display: none;
+}
+
+.dark-mode #theme-button svg:last-child {
+  display: block;
+}
+
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: var(--background);
+  background-color: var(--text-color);
+  background-size:cover;
+  font-size: 30px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+hr {
+  width: 500px;
+  height: 2px;
+  background-color: var(--border-color);
+  border: 0;
+}
+
+#gameboard {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+
+  background-color: var(--game-board-color);
+  color: var(--game-board-color-color);
+  border: 6px solid var(--title-color);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+}
+
+.gamecell {
+  border: 6px;
+  border: solid var(--game-cell-color);
+  border-radius: 2px;
+  font-size: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.winning-cell {
+  background-color: var(--winning-cell-backgorund-color);
+  color: var(--winning-cell-color);
+}
+
+#restart-button {
+  height: 50px;
+  width: 150px;
+  color: var(--game-cell-color);
+  border: 5 px solid lightblue;
+  border-radius: 5px;
+  background-color: var(--game-board-color);
+  font: white;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#title {
+  color: var(--title-color);
+}
